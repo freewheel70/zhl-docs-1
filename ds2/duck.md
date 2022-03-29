@@ -6,4 +6,6 @@ uid: zhl-docs-1-duck
 ---
 # Duck
 
-Duck is the common name for numerous species of waterfowl in the family Anatidae. Ducks are generally smaller and shorter-necked than swans and geese
+Duck is the common name for numerous species of waterfowl in the family Anatidae. Ducks are generally smaller and shorter-necked than swans and geese.  
+
+You could also eat roast ducks in @zhl-docs-2-shanghai 
