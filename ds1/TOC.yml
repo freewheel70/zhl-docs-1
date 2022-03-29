@@ -1,2 +1,6 @@
 - name: Index
   href: index.md
+- name: Dog
+  href: dog.md
+- name: Cat
+  href: cat.md
