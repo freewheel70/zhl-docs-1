@@ -2,4 +2,4 @@
 
 ## from repo zhl-docs-1
 
-### the pages will about some mammal animals.
+### the pages are about some mammal animals.
