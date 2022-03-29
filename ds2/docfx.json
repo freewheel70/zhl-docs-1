@@ -45,6 +45,8 @@
     },
     "fileMetadata": {},
     "template": [],
-    "dest": "ds2"
+    "dest": "ds2",
+    "updateTimeAsCommitBuildTime": true,
+    "updateCommitBuildTime": true
   }
 }

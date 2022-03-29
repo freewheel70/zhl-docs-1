@@ -40,6 +40,12 @@
       "url": "https://github.com/Microsoft/templates.docs.msft",
       "branch": "main",
       "branch_mapping": {}
+    },
+    {
+      "path_to_root": "ds1/crr/cities",
+      "branch": "main",
+      "url": "https://github.com/freewheel70/zhl-docs-2",
+      "include_in_build": true
     }
   ],
   "branch_target_mapping": {},
