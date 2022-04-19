@@ -10,4 +10,6 @@ The cat (Felis catus) is a domestic species of small carnivorous mammal.[1][2] I
 
 There are lots of cats in @zhl-docs-2-shanghai named [SH](xref:zhl-docs-2-shanghai) cat.
 
+Visit [Micorsoft Store2](https://www.microsoft.com/en-sg/store/b/sale)
+
 Please go to <a href="https://www.microsoft.com/en-sg/store/b/sale" title="Micorsoft Store">Micorsoft Store</a> to buy laptops.
