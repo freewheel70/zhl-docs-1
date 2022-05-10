@@ -1,0 +1,12 @@
+{
+    "redirections": [
+      {
+        "source_path": "missing.md",
+        "redirect_url": "/dog"
+      },
+      {
+        "source_path": "missing2.md",
+        "redirect_url": "https://docs.microsoft.com/en-us/dotnet/"
+      }
+    ]
+}

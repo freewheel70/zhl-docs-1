@@ -1,9 +1,5 @@
 {
     "redirections": [
-      {
-        "source_path_from_root": "/ds1/missing.md",
-        "redirect_url": "/ds1/dog",
-        "redirect_document_id": false
-      }
+  
     ]
 }
