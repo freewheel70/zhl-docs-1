@@ -5,8 +5,8 @@
         "redirect_url": "/dog"
       },
       {
-        "source_path": "toc.yml",
-        "redirect_url": "/dog-not-found"
+        "source_path": "missing2.md",
+        "redirect_url": "https://docs.microsoft.com/en-us/dotnet/"
       }
     ]
 }
