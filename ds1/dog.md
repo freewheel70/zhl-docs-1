@@ -10,4 +10,6 @@ The dog or domestic dog (Canis familiaris[4][5] or Canis lupus familiaris[5]) is
 
 There are also lots of dogs in <xref:zhl-docs-2-shanghai> 
 
+[link to docs homepage](https://ppe.docs.microsoft.com/en-us/test-page/index)
+
 Dummy update on 5/10
