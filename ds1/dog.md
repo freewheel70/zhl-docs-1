@@ -3,6 +3,8 @@ title: Dog
 author: zhihongli
 description: introduction about dog
 uid: zhl-docs-1-dog
+ms.search.industry: Retail
+audience: Application User, Developer
 ---
 # Dog
 
