@@ -3,8 +3,9 @@ title: Dog
 author: zhihongli
 description: introduction about dog
 uid: zhl-docs-1-dog
-ms.search.industry: [Norway, Sweden]
+ms.search.industry: Retail
 audience: Application User, Developer
+ms.search.region: [Belgium, Norway, Sweden, Switzerland]
 ---
 # Dog
 
@@ -14,4 +15,4 @@ There are also lots of dogs in <xref:zhl-docs-2-shanghai>
 
 [link to docs homepage](https://ppe.docs.microsoft.com/en-us/test-page/index)
 
-Dummy update on 5th August.
+A dummy update on 5th August.
