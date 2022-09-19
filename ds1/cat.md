@@ -21,3 +21,7 @@ Please go to <a href="https://www.microsoft.com/en-sg/store/b/sale" title="Micor
 Dummy update on 5/10 for cat
 
 dummy update on 7/15 for kitty
+
+[link to dog-1](https://ppe.docs.microsoft.com/en-us/ds1/dog)
+
+[link to dog-2](https://dev.learn.microsoft.com/en-us/ds1/dog)
