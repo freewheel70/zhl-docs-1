@@ -36,7 +36,7 @@
         ]
       }
     ],
-    "removeHostName": true,
+    "removeHostName": false,
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
