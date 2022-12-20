@@ -58,6 +58,12 @@
       "branch": "sh2",
       "url": "https://github.com/freewheel70/zhl-docs-2",
       "include_in_build": true
+    },
+    {
+      "path_to_root": "ds1/zhl-code",
+      "branch": "main",
+      "url": "https://github.com/freewheel70/zhl-code",
+      "include_in_build": false
     }
   ],
   "branch_target_mapping": {},
