@@ -46,24 +46,6 @@
       "url": "https://github.com/Microsoft/templates.docs.msft",
       "branch": "main",
       "branch_mapping": {}
-    },
-    {
-      "path_to_root": "ds1/crr/cities",
-      "branch": "br2",
-      "url": "https://github.com/freewheel70/zhl-docs-2",
-      "include_in_build": true
-    },
-    {
-      "path_to_root": "ds1/crr2/cities",
-      "branch": "sh2",
-      "url": "https://github.com/freewheel70/zhl-docs-2",
-      "include_in_build": true
-    },
-    {
-      "path_to_root": "ds1/zhl-code",
-      "branch": "main",
-      "url": "https://github.com/freewheel70/zhl-code",
-      "include_in_build": false
     }
   ],
   "branch_target_mapping": {},
