@@ -1,3 +1,12 @@
 - name: Docs
   tocHref: /
   topicHref: /
+- name: Animals
+  tocHref: /ds1
+  topicHref: /ds1
+- name: Animals
+  tocHref: /ds1
+  topicHref: /ds1
+- name: Localization Test
+  tocHref: /test-localization
+  topicHref: /test-localization
