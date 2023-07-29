@@ -14,3 +14,5 @@
   href: missing2.md  
 - name: CSharp
   href: Csharp.md  
+- name: External from test loc
+  href: https://dev.learn.microsoft.com/en-us/test-localization/toc.json?branch=main  
