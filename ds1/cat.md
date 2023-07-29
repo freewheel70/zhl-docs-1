@@ -6,7 +6,6 @@ uid: zhl-docs-1-cat
 ms.search.industry: Retail
 audience: Application User, Developer
 ms.search.region: Belgium, Norway, Sweden, Switzerland
-breadcrumb_path: "https://dev.learn.microsoft.com/en-us/test-localization/toc.json?branch=main"
 ---
 # Cat
 

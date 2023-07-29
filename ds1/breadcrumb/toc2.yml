@@ -4,6 +4,6 @@
 - name: Animals
   tocHref: /ds1
   topicHref: /ds1
-- name: Localization Test
-  tocHref: /test-localization
-  topicHref: /test-localization
+- name: Tutorials
+  tocHref: /ds1/howto
+  topicHref: /ds1/howto
