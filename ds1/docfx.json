@@ -48,6 +48,7 @@
     "template": [],
     "dest": "ds1",
     "updateTimeAsCommitBuildTime": true,
-    "updateCommitBuildTime": true
+    "updateCommitBuildTime": true,
+    "documentIdOverride": "document-ids.json"
   }
 }

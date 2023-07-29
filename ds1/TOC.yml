@@ -4,6 +4,9 @@
   href: dog.md
 - name: Cat
   href: cat.md
+- name: How-to tutorials
+  href: howto/toc.yml
+  topicHref: howto/overview.md
 - name: Missing
   href: missing.md
 - name: Missing2
