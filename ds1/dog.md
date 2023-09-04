@@ -3,12 +3,9 @@ title: Dog
 author: zhihongli
 description: introduction about dog
 uid: zhl-docs-1-dog
-ms.search.industry: Retail
-audience: Application User, Developer
-ms.search.region: [Belgium, Norway, Sweden, Switzerland]
-product: yyy
-azureCategories: developer-tools
-ms.service: xxx
+devlang: powerapps-dot
+product: ['azure-defender-iot', 'windows-22000']
+ms.prod: nimbusml
 ---
 # Dog
 
