@@ -6,6 +6,8 @@ uid: zhl-docs-1-dog
 devlang: powerapps-dot
 product: ['azure-defender-iot', 'windows-22000']
 ms.prod: nimbusml
+ms.service: storage
+ms.subservice: tables
 ---
 # Dog
 
