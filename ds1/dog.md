@@ -8,7 +8,7 @@ product: ['azure-defender-iot']
 ms.prod: nimbusml
 ms.service: storage
 ms.subservice: tables
-ms.localizationpriority: high
+ms.localizationpriority: low
 ---
 # Dog
 
