@@ -7,6 +7,10 @@
       {
         "source_path": "missing2.md",
         "redirect_url": "https://docs.microsoft.com/en-us/dotnet/"
+      },
+      {
+        "source_path": "cat.md",
+        "redirect_url": "/dog"
       }
     ]
 }
