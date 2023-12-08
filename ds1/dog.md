@@ -1,6 +1,6 @@
 ---
 title: Dog
-author: zhihongli
+author: ['zhihongli', 'zhihongli2']
 description: introduction about dog
 uid: zhl-docs-1-dog
 devlang: powerapps-dot
