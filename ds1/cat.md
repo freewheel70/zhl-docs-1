@@ -6,6 +6,7 @@ uid: zhl-docs-1-cat
 ms.search.industry: Retail
 audience: Application User, Developer
 ms.search.region: Belgium, Norway, Sweden, Switzerland
+product: windows-22000
 ---
 # Cat
 
