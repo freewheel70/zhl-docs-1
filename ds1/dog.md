@@ -1,10 +1,8 @@
 ---
 title: Dog
-author: ['zhihongli', 'zhihongli2']
+author: zhihongli
 description: introduction about dog
 uid: zhl-docs-1-dog
-devlang: powerapps-dot
-product: ['azure-defender-iot']
 ---
 # Dog
 
