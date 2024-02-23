@@ -5,6 +5,9 @@ description: introduction about zone pivot
 zone_pivot_groups: test-group
 ---
 # Normal test
+
+This is a dummy testing to test zone pivots usage
+
 ::: zone pivot="test-pivot-1"
 ## H2
 abcdefg
