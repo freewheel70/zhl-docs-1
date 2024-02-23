@@ -8,6 +8,8 @@ zone_pivot_groups: test-group
 
 This is a dummy testing to test zone pivots usage
 
+## another h2
+
 ::: zone pivot="test-pivot-1"
 ## H2
 abcdefg
