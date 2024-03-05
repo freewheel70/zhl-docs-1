@@ -16,6 +16,15 @@ metadata:
 
 title: Collect and manipulate user inputs by using Azure Active Directory B2C custom policy
 
+
+prerequisites:
+    dependencies:
+        - If you don't have one already, [create an Azure AD B2C tenant](https://learn.microsoft.com/en-us/azure/active-directory-b2c/tutorial-create-tenant) that is linked to your Azure subscription.
+        - |
+          [Register a web application](https://learn.microsoft.com/en-us/azure/active-directory-b2c/tutorial-register-applications), and [enable ID token implicit grant](https://learn.microsoft.com/en-us/azure/active-directory-b2c/tutorial-register-applications#enable-id-token-implicit-grant). For the Redirect URI, use https://jwt.ms. 
+        - You must have [Visual Studio Code (VS Code)](https://code.visualstudio.com/) installed in your computer. 
+        - Complete the steps in [Write your first Azure AD B2C custom policy - Hello World!](https://learn.microsoft.com/en-us/azure/active-directory-b2c/custom-policies-series-hello-world). This article is a part of [Create and run your own custom policies how-to guide series](https://learn.microsoft.com/en-us/azure/active-directory-b2c/custom-policy-overview). 
+
 introduction: |
   Azure Active Directory B2C (Azure AD B2C) custom policies allows you to collect user inputs. You can then use inbuilt methods to manipulate the user inputs.  
 
@@ -36,13 +45,6 @@ introduction: |
   > [!NOTE] 
   > This article is part of the **[Create and run your own custom policies in Azure Active Directory B2C how-to guide series](https://learn.microsoft.com/en-us/azure/active-directory-b2c/custom-policies-series-overview)**. We recommend that you start this series from the first article.
 
-prerequisites:
-    dependencies:
-        - If you don't have one already, [create an Azure AD B2C tenant](https://learn.microsoft.com/en-us/azure/active-directory-b2c/tutorial-create-tenant) that is linked to your Azure subscription.
-        - |
-          [Register a web application](https://learn.microsoft.com/en-us/azure/active-directory-b2c/tutorial-register-applications), and [enable ID token implicit grant](https://learn.microsoft.com/en-us/azure/active-directory-b2c/tutorial-register-applications#enable-id-token-implicit-grant). For the Redirect URI, use https://jwt.ms. 
-        - You must have [Visual Studio Code (VS Code)](https://code.visualstudio.com/) installed in your computer. 
-        - Complete the steps in [Write your first Azure AD B2C custom policy - Hello World!](https://learn.microsoft.com/en-us/azure/active-directory-b2c/custom-policies-series-hello-world). This article is a part of [Create and run your own custom policies how-to guide series](https://learn.microsoft.com/en-us/azure/active-directory-b2c/custom-policy-overview). 
 
 procedureSection:
   - title: Declare claims
@@ -84,9 +86,6 @@ procedureSection:
         - **DisplayName** specifies the label for the UI control that appears on the user interface if you want to collect the value of the claim from the user.
 
   - title: Define claims transformations
-    summary: |
-        A [ClaimsTransformation](https://learn.microsoft.com/en-us/azure/active-directory-b2c/claimstransformations) contains a function that you use to convert a given claim into another one. For instance, you can change a string claim from lower case to upper case. Learn more about [Claims transformations supported by Azure AD B2C](https://learn.microsoft.com/en-us/azure/active-directory-b2c/claimstransformations#claims-transformations-reference). 
-    
     steps:
       - |
         In the `ContosoCustomPolicy.XML` file, add a `ClaimsTransformations` element as a child of the `BuildingBlocks` section. 
@@ -142,6 +141,9 @@ procedureSection:
         - *CreateDisplayNameTransformation* concatenates *givenName* and *surname* to form *displayName*. 
         
         - *CreateMessageTransformation* concatenates *Hello* and *displayName* to form *message*. 
+    summary: |
+        A [ClaimsTransformation](https://learn.microsoft.com/en-us/azure/active-directory-b2c/claimstransformations) contains a function that you use to convert a given claim into another one. For instance, you can change a string claim from lower case to upper case. Learn more about [Claims transformations supported by Azure AD B2C](https://learn.microsoft.com/en-us/azure/active-directory-b2c/claimstransformations#claims-transformations-reference). 
+    
 
   - title: Configure content definitions
     code: |
