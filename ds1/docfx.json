@@ -42,9 +42,14 @@
     "globalMetadata": {
       "breadcrumb_path": "/ds1/breadcrumb/toc.json",
       "extendBreadcrumb": true,
-      "feedback_system": "None"
+      "feedback_system": "None",
+      "no-loc": ["update"]
     },
-    "fileMetadata": {},
+    "fileMetadata": {
+      "no-loc": {
+        "**/*.md": ["dummy"]
+      }
+    },
     "template": [],
     "dest": "ds1",
     "updateTimeAsCommitBuildTime": true,
