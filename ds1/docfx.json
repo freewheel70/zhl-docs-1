@@ -43,10 +43,16 @@
       "breadcrumb_path": "/ds1/breadcrumb/toc.json",
       "extendBreadcrumb": true,
       "feedback_system": "None",
-      "no-loc": ["update", "Binding", "Tommy", "Other"],
-      "layout": "Conceptual"
+      "no-loc": ["update", "Binding", "Tommy", "Other"]     
     },
     "fileMetadata": {
+      "layout": {
+        "**/*.md": "Conceptual",
+        "**/*.yml": "Conceptual",
+        "**/toc.md": null,
+        "**/toc.yml": null,
+        "dog.md": "LandingPage"
+      },
       "no-loc": {
         "**/*.TOC": ["Binding"]
       }
