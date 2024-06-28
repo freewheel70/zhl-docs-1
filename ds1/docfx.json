@@ -43,11 +43,11 @@
       "breadcrumb_path": "/ds1/breadcrumb/toc.json",
       "extendBreadcrumb": true,
       "feedback_system": "None",
-      "no-loc": ["update"]
+      "no-loc": ["update", "Binding", "Tommy", "Other"]
     },
     "fileMetadata": {
       "no-loc": {
-        "**/*.md": ["dummy"]
+        "**/*.TOC": ["Binding"]
       }
     },
     "template": [],
