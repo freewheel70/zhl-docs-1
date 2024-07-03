@@ -3,6 +3,7 @@ title: Dog
 author: zhihongli
 description: introduction about dog
 uid: zhl-docs-1-dog
+ms.topic: how-to
 no-loc: ["found"]
 ---
 # Dog
@@ -18,3 +19,8 @@ Should not be found in <xref:zhl-docs-2-shanghai-dummy>
 A dummy update on 5th August.
 
 hello 2024
+
+
+Some <b>important</b> <i>note</i>
+
+work hard
