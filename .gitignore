@@ -4,5 +4,5 @@ _site/
 .optemp/
 _themes*/
 _repo.*/
-
+linter-output
 .openpublishing.buildcore.ps1
