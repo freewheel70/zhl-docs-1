@@ -1,6 +1,7 @@
 ---
 title: Cat
-author: zhihongli
+author: 
+  - zhihongli
 description: introduction about cat
 uid: zhl-docs-1-cat
 ms.search.industry: Retail
