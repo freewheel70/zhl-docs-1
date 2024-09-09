@@ -1,0 +1,382 @@
+{
+  "metadata": {
+    "MSTitle": "Delete VM with dependencies on Azure Stack Hub",
+    "MSAuthor": "sethm",
+    "MSDate": "02/13/2023",
+    "Author": "sethmanheim",
+    "MSTopic": "how-to",
+    "MSDescription": "How to delete a VM (virtual machine) with dependencies on Azure Stack Hub",
+    "CustomerIntent": "",
+    "MSService": "",
+    "MSSubService": "",
+    "MSProduct": "",
+    "MSTechnology": "",
+    "Devlang": "",
+    "MSCustom": "devx-track-azurepowershell",
+    "title": "Delete VM with dependencies on Azure Stack Hub",
+    "ms.author": "sethm",
+    "ms.date": "02/13/2023",
+    "ms.topic": "how-to",
+    "description": "How to delete a VM (virtual machine) with dependencies on Azure Stack Hub",
+    "ms.service": "",
+    "ms.subservice": "",
+    "ms.product": "",
+    "ms.technology": "",
+    "ms.devlang": "",
+    "ms.custom": "devx-track-azurepowershell",
+    "schema": "c:/cpx/Linter/src/LanguageServer/Client/resources/config/.learnlinter/schemas/rules.howto.schema.json",
+    "version": "1.0.0",
+    "parserVersion": "4.4.9",
+    "articleType": "Article",
+    "articleId": "b9184c59-e6d3-437d-8157-3c9353be9f34"
+  },
+  "content": [
+    {
+      "markdown": "# How to delete a virtual machine with dependencies on Azure Stack Hub",
+      "metadata": {
+        "componentId": "d7a139eb-73f4-44d5-9870-d41db1eda13b",
+        "componentType": "compHeaderH1",
+        "unitType": "unitIntroduction",
+        "unitId": "how-to.unitIntroduction",
+        "version": "0.0.1",
+        "schema": ""
+      },
+      "level": 1,
+      "content": [
+        {
+          "markdown": "In this article, you can find the steps to remove a virtual machine (VM) and its dependencies from Azure Stack Hub.",
+          "metadata": {
+            "componentId": "19cde431-3c83-4e0a-91a2-e7733f4c5412",
+            "componentType": "compParagraph"
+          }
+        },
+        {
+          "markdown": "If you remove a VM from Azure Stack Hub, the component dependencies; that is, data disks, virtual network interfaces, and diagnostic containers, remain in the resource group. These items won't be automatically deleted along with your OS disk. Follow the steps in this article to remove your OS disc and component dependencies.",
+          "metadata": {
+            "componentId": "how-to.unitIntroduction.compParagraph[1]",
+            "componentType": "compParagraph",
+            "version": "0.0.1",
+            "schema": ""
+          }
+        },
+        {
+          "markdown": "Another paragraph.",
+          "metadata": {
+            "componentId": "how-to.unitIntroduction.compParagraph[2]",
+            "componentType": "compParagraph",
+            "version": "0.0.1",
+            "schema": ""
+          }
+        }
+      ]
+    },
+    {
+      "markdown": "## Prerequisites",
+      "metadata": {
+        "componentId": "4660771b-9741-4eb5-a8a9-19e4e5e5f857",
+        "componentType": "compHeaderH2",
+        "unitType": "unitPrerequisites",
+        "unitId": "how-to.unitPrerequisites",
+        "version": "0.0.1",
+        "schema": ""
+      },
+      "level": 2,
+      "content": [
+        {
+          "markdown": "Summary",
+          "metadata": {
+            "componentId": "how-to.unitPrerequisites.compParagraph[0]",
+            "componentType": "compParagraph",
+            "version": "0.0.1",
+            "schema": ""
+          }
+        },
+        {
+          "markdown": "- item\r\n- item\r\n- item\r\n",
+          "metadata": {
+            "componentId": "how-to.unitPrerequisites.componentId[1]",
+            "componentType": "compListUnordered",
+            "version": "0.0.1",
+            "schema": ""
+          },
+          "count": 3,
+          "content": [
+            {
+              "markdown": "- item",
+              "metadata": {
+                "componentId": "how-to.unitPrerequisites.componentId[1].compListItem[0]",
+                "componentType": "compRowUnordered",
+                "version": "0.0.1",
+                "schema": ""
+              },
+              "order": 0,
+              "content": [
+                {
+                  "markdown": "item",
+                  "metadata": {
+                    "componentId": "704febc3-7247-4079-8fe1-6bd6ce1b3b1f",
+                    "componentType": "compParagraph"
+                  }
+                }
+              ]
+            },
+            {
+              "markdown": "- item",
+              "metadata": {
+                "componentId": "13260294-37d3-4fd8-bbaa-cbc3c5a67c24",
+                "componentType": "compRowUnordered"
+              },
+              "order": 1,
+              "content": [
+                {
+                  "markdown": "item",
+                  "metadata": {
+                    "componentId": "ba2c15ed-5875-48c1-b422-75733b874cfe",
+                    "componentType": "compParagraph"
+                  }
+                }
+              ]
+            },
+            {
+              "markdown": "- item\r\n",
+              "metadata": {
+                "componentId": "e21b444e-8726-4bcd-8410-cb42dbf9da83",
+                "componentType": "compRowUnordered"
+              },
+              "order": 2,
+              "content": [
+                {
+                  "markdown": "item",
+                  "metadata": {
+                    "componentId": "ca4db545-fba4-4da1-864f-22c4a6cb0d34",
+                    "componentType": "compParagraph"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "markdown": "## Delete a VM with dependencies",
+      "metadata": {
+        "componentId": "2ef0aa4b-89f0-4a5d-8e7f-2b76eed6e22f",
+        "componentType": "compHeaderH2",
+        "unitType": "unitProcedureOrderedlist",
+        "unitId": "how-to.oneof[unitProcedureOrderedlist,unitProcedureCodeblock].unitProcedureOrderedlist",
+        "version": "0.0.1",
+        "schema": ""
+      },
+      "level": 2,
+      "content": [
+        {
+          "markdown": "When you create a new VM, you typically create a new resource group and put all the dependencies in that resource group. When you want to delete the VM and all of its dependencies, you can delete the resource group. Azure Resource Manager successfully deletes the dependencies. There are times when you cannot delete the resource group to remove the VM; for example, the VM might contain resources that are not dependencies of the VM that you want to keep.",
+          "metadata": {
+            "componentId": "how-to.oneof[unitProcedureOrderedlist,unitProcedureCodeblock].unitProcedureOrderedlist.compParagraph[0]",
+            "componentType": "compParagraph",
+            "version": "0.0.1",
+            "schema": ""
+          }
+        },
+        {
+          "markdown": "1. item\r\n1. item\r\n",
+          "metadata": {
+            "componentId": "how-to.oneof[unitProcedureOrderedlist,unitProcedureCodeblock].unitProcedureOrderedlist.componentId[1]",
+            "componentType": "compListOrdered",
+            "version": "0.0.1",
+            "schema": ""
+          },
+          "count": 2,
+          "content": [
+            {
+              "markdown": "1. item",
+              "metadata": {
+                "componentId": "d2b43661-9b12-47a6-ad41-f15fc50147af",
+                "componentType": "compRowOrdered"
+              },
+              "order": 0,
+              "content": [
+                {
+                  "markdown": "item",
+                  "metadata": {
+                    "componentId": "1100a4b0-593c-4c9e-bc2c-37a0a116404d",
+                    "componentType": "compParagraph"
+                  }
+                }
+              ]
+            },
+            {
+              "markdown": "1. item\r\n",
+              "metadata": {
+                "componentId": "how-to.oneof[unitProcedureOrderedlist,unitProcedureCodeblock].unitProcedureOrderedlist.componentId[1].compListItem[0]",
+                "componentType": "compRowOrdered",
+                "version": "0.0.1",
+                "schema": ""
+              },
+              "order": 1,
+              "content": [
+                {
+                  "markdown": "item",
+                  "metadata": {
+                    "componentId": "af215803-f510-4353-981c-8028bd31970e",
+                    "componentType": "compParagraph"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "markdown": "## Related content",
+      "metadata": {
+        "componentId": "44846ab1-ced5-48bb-b562-4e856b098643",
+        "componentType": "compHeaderH2",
+        "unitType": "unknown",
+        "unitId": "unknown"
+      },
+      "level": 2,
+      "content": [
+        {
+          "markdown": "abc ",
+          "metadata": {
+            "componentId": "903d830f-afc2-4b48-9eb5-68deee44e2aa",
+            "componentType": "compParagraph"
+          }
+        },
+        {
+          "markdown": "- [Create a VM](deploy-foundational-patterns.md)\r\n- [Create a VM with dependencies](deploy-foundational-patterns.md)\r\n- [Create a VM with a custom image](dev-start-vscode-storage.md)",
+          "metadata": {
+            "componentId": "b7a3b0ca-9836-4941-b47a-bef89810fccf",
+            "componentType": "compListUnordered"
+          },
+          "count": 3,
+          "content": [
+            {
+              "markdown": "- [Create a VM](deploy-foundational-patterns.md)",
+              "metadata": {
+                "componentId": "7cac53ca-91ee-4bd2-b8fd-39019617b739",
+                "componentType": "compRowUnordered"
+              },
+              "order": 0,
+              "content": [
+                {
+                  "markdown": "[Create a VM](deploy-foundational-patterns.md)",
+                  "metadata": {
+                    "componentId": "5e1a9882-d3eb-4b3c-b73d-5c7d7f357e94",
+                    "componentType": "compParagraph"
+                  },
+                  "content": [
+                    {
+                      "markdown": "[Create a VM](deploy-foundational-patterns.md)",
+                      "metadata": {
+                        "componentId": "a324a2cd-207a-4076-b962-e2aa75f8f278",
+                        "componentType": "compLink"
+                      },
+                      "href": "deploy-foundational-patterns.md",
+                      "hrefPath": "ds1/deploy-foundational-patterns.md",
+                      "anchor": "",
+                      "link": "https://docs.microsoft.com/ds1/deploy-foundational-patterns",
+                      "queryString": "",
+                      "content": [
+                        {
+                          "markdown": "Create a VM",
+                          "metadata": {
+                            "componentId": "ccb10449-1596-4201-b816-e4484e6d6263",
+                            "componentType": "compParagraph"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "markdown": "- [Create a VM with dependencies](deploy-foundational-patterns.md)",
+              "metadata": {
+                "componentId": "d2b7d61b-d4fc-4bb0-b061-4c1f3134ef29",
+                "componentType": "compRowUnordered"
+              },
+              "order": 1,
+              "content": [
+                {
+                  "markdown": "[Create a VM with dependencies](deploy-foundational-patterns.md)",
+                  "metadata": {
+                    "componentId": "2c349d4b-ca69-4d45-bd5e-a2a0d997a78e",
+                    "componentType": "compParagraph"
+                  },
+                  "content": [
+                    {
+                      "markdown": "[Create a VM with dependencies](deploy-foundational-patterns.md)",
+                      "metadata": {
+                        "componentId": "6db03a34-2e9a-496b-a802-ece910e3a1fd",
+                        "componentType": "compLink"
+                      },
+                      "href": "deploy-foundational-patterns.md",
+                      "hrefPath": "ds1/deploy-foundational-patterns.md",
+                      "anchor": "",
+                      "link": "https://docs.microsoft.com/ds1/deploy-foundational-patterns",
+                      "queryString": "",
+                      "content": [
+                        {
+                          "markdown": "Create a VM with dependencies",
+                          "metadata": {
+                            "componentId": "81a06d22-8c6f-4363-ab53-2f946e17390c",
+                            "componentType": "compParagraph"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "markdown": "- [Create a VM with a custom image](dev-start-vscode-storage.md)",
+              "metadata": {
+                "componentId": "8ea1280b-f1aa-4101-b57b-07b6197b5f7b",
+                "componentType": "compRowUnordered"
+              },
+              "order": 2,
+              "content": [
+                {
+                  "markdown": "[Create a VM with a custom image](dev-start-vscode-storage.md)",
+                  "metadata": {
+                    "componentId": "b89f0cab-52cf-4eea-9b58-9f64b5e93c1c",
+                    "componentType": "compParagraph"
+                  },
+                  "content": [
+                    {
+                      "markdown": "[Create a VM with a custom image](dev-start-vscode-storage.md)",
+                      "metadata": {
+                        "componentId": "396df7e5-4288-4719-bd29-9aedad11078c",
+                        "componentType": "compLink"
+                      },
+                      "href": "dev-start-vscode-storage.md",
+                      "hrefPath": "ds1/dev-start-vscode-storage.md",
+                      "anchor": "",
+                      "link": "https://docs.microsoft.com/ds1/dev-start-vscode-storage",
+                      "queryString": "",
+                      "content": [
+                        {
+                          "markdown": "Create a VM with a custom image",
+                          "metadata": {
+                            "componentId": "79ba986b-271f-477c-81e0-ff56ee390cef",
+                            "componentType": "compParagraph"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

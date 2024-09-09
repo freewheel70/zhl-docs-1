@@ -1,8 +1,0 @@
-- name: Index
-  href: index.md
-- name: Duck
-  href: duck.md  
-- name: Chicken
-  href: chicken.yml
-- name: Goose
-  href: goose.yml  
