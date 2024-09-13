@@ -1,0 +1,381 @@
+{
+  "metadata": {
+    "MSTitle": "Delete VM with dependencies on Azure Stack Hub",
+    "MSAuthor": "sethm",
+    "MSDate": "02/13/2023",
+    "Author": "sethmanheim",
+    "MSTopic": "how-to",
+    "MSDescription": "How to delete a VM (virtual machine) with dependencies on Azure Stack Hub",
+    "CustomerIntent": "",
+    "MSService": "",
+    "MSSubService": "",
+    "MSProduct": "",
+    "MSTechnology": "",
+    "Devlang": "",
+    "MSCustom": "devx-track-azurepowershell",
+    "title": "Delete VM with dependencies on Azure Stack Hub",
+    "ms.author": "sethm",
+    "ms.date": "02/13/2023",
+    "ms.topic": "how-to",
+    "description": "How to delete a VM (virtual machine) with dependencies on Azure Stack Hub",
+    "ms.service": "",
+    "ms.subservice": "",
+    "ms.product": "",
+    "ms.technology": "",
+    "ms.devlang": "",
+    "ms.custom": "devx-track-azurepowershell",
+    "schema": "c:/cpx/Linter/src/LanguageServer/Client/resources/config/.learnlinter/schemas/rules.howto.schema.json",
+    "version": "1.0.0",
+    "parserVersion": "4.4.9",
+    "articleType": "Article",
+    "articleId": "8cc6144f-0b1e-446d-b750-332fd33264f4"
+  },
+  "content": [
+    {
+      "markdown": "# How to delete a virtual machine with dependencies on Azure Stack Hub",
+      "metadata": {
+        "componentId": "8f0a2ddb-f35e-4638-9145-192d9b248d9b",
+        "componentType": "compHeaderH1",
+        "unitType": "unitIntroduction",
+        "unitId": "how-to.unitIntroduction",
+        "version": "0.0.1",
+        "schema": ""
+      },
+      "level": 1,
+      "content": [
+        {
+          "markdown": "first paragraph.",
+          "metadata": {
+            "componentId": "a9083e41-21d8-4198-91cd-9ed3494b8f91",
+            "componentType": "compParagraph"
+          }
+        },
+        {
+          "markdown": "second paragraph.",
+          "metadata": {
+            "componentId": "how-to.unitIntroduction.compParagraph[1]",
+            "componentType": "compParagraph",
+            "version": "0.0.1",
+            "schema": ""
+          }
+        },
+        {
+          "markdown": "Another paragraph.",
+          "metadata": {
+            "componentId": "how-to.unitIntroduction.compParagraph[2]",
+            "componentType": "compParagraph",
+            "version": "0.0.1",
+            "schema": ""
+          }
+        }
+      ]
+    },
+    {
+      "markdown": "## Prerequisites",
+      "metadata": {
+        "componentId": "54d5d150-9ff5-4b62-8f65-7b22fbe0af70",
+        "componentType": "compHeaderH2",
+        "unitType": "unitPrerequisites",
+        "unitId": "how-to.unitPrerequisites",
+        "version": "0.0.1",
+        "schema": ""
+      },
+      "level": 2,
+      "content": [
+        {
+          "markdown": "Summary",
+          "metadata": {
+            "componentId": "how-to.unitPrerequisites.compParagraph[0]",
+            "componentType": "compParagraph",
+            "version": "0.0.1",
+            "schema": ""
+          }
+        },
+        {
+          "markdown": "- item1\r\n- item2\r\n- item3\r\n",
+          "metadata": {
+            "componentId": "how-to.unitPrerequisites.componentId[1]",
+            "componentType": "compListUnordered",
+            "version": "0.0.1",
+            "schema": ""
+          },
+          "count": 3,
+          "content": [
+            {
+              "markdown": "- item1",
+              "metadata": {
+                "componentId": "how-to.unitPrerequisites.componentId[1].compListItem[0]",
+                "componentType": "compRowUnordered",
+                "version": "0.0.1",
+                "schema": ""
+              },
+              "order": 0,
+              "content": [
+                {
+                  "markdown": "item1",
+                  "metadata": {
+                    "componentId": "0a0983d7-1e91-444d-8b59-1e91833ed8f0",
+                    "componentType": "compParagraph"
+                  }
+                }
+              ]
+            },
+            {
+              "markdown": "- item2",
+              "metadata": {
+                "componentId": "a92e12b6-bfbe-440a-ba05-a8655db55b37",
+                "componentType": "compRowUnordered"
+              },
+              "order": 1,
+              "content": [
+                {
+                  "markdown": "item2",
+                  "metadata": {
+                    "componentId": "de319ded-894d-4629-ad48-e27a8b43476f",
+                    "componentType": "compParagraph"
+                  }
+                }
+              ]
+            },
+            {
+              "markdown": "- item3\r\n",
+              "metadata": {
+                "componentId": "6373688d-ea3b-43eb-bc96-bd3955e6812e",
+                "componentType": "compRowUnordered"
+              },
+              "order": 2,
+              "content": [
+                {
+                  "markdown": "item3",
+                  "metadata": {
+                    "componentId": "7a5ee061-7393-415d-a783-90bbee9b749c",
+                    "componentType": "compParagraph"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "markdown": "## Delete a VM with dependencies",
+      "metadata": {
+        "componentId": "894e94fd-c87e-45fb-9652-7c4d6bf72bcd",
+        "componentType": "compHeaderH2",
+        "unitType": "unitProcedureOrderedlist",
+        "unitId": "how-to.oneof[unitProcedureOrderedlist,unitProcedureCodeblock].unitProcedureOrderedlist",
+        "version": "0.0.1",
+        "schema": ""
+      },
+      "level": 2,
+      "content": [
+        {
+          "markdown": "When you create a new VM, you typically create a new resource group and put all the dependencies in that resource group. When you want to delete the VM and all of its dependencies, you can delete the resource group. Azure Resource Manager successfully deletes the dependencies. There are times when you cannot delete the resource group to remove the VM; for example, the VM might contain resources that are not dependencies of the VM that you want to keep.",
+          "metadata": {
+            "componentId": "how-to.oneof[unitProcedureOrderedlist,unitProcedureCodeblock].unitProcedureOrderedlist.compParagraph[0]",
+            "componentType": "compParagraph",
+            "version": "0.0.1",
+            "schema": ""
+          }
+        },
+        {
+          "markdown": "1. item1\r\n2. item2\r\n",
+          "metadata": {
+            "componentId": "how-to.oneof[unitProcedureOrderedlist,unitProcedureCodeblock].unitProcedureOrderedlist.componentId[1]",
+            "componentType": "compListOrdered",
+            "version": "0.0.1",
+            "schema": ""
+          },
+          "count": 2,
+          "content": [
+            {
+              "markdown": "1. item1",
+              "metadata": {
+                "componentId": "bc4b6527-0889-47de-9882-b54779614fcf",
+                "componentType": "compRowOrdered"
+              },
+              "order": 0,
+              "content": [
+                {
+                  "markdown": "item1",
+                  "metadata": {
+                    "componentId": "95476c4e-094a-4bad-ae3b-7fd00e6cbf5d",
+                    "componentType": "compParagraph"
+                  }
+                }
+              ]
+            },
+            {
+              "markdown": "2. item2\r\n",
+              "metadata": {
+                "componentId": "how-to.oneof[unitProcedureOrderedlist,unitProcedureCodeblock].unitProcedureOrderedlist.componentId[1].compListItem[0]",
+                "componentType": "compRowOrdered",
+                "version": "0.0.1",
+                "schema": ""
+              },
+              "order": 1,
+              "content": [
+                {
+                  "markdown": "item2",
+                  "metadata": {
+                    "componentId": "3bdf1aa1-64d4-4cf5-91ad-31c7b327e6ca",
+                    "componentType": "compParagraph"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "markdown": "## Related content",
+      "metadata": {
+        "componentId": "78a14d7c-b34c-4fd4-9869-bf5f60061efd",
+        "componentType": "compHeaderH2",
+        "unitType": "unitLinkRelated",
+        "unitId": "how-to.oneof[unitLinkNextstep,unitLinkRelated].unitLinkRelated",
+        "version": "0.0.1",
+        "schema": ""
+      },
+      "level": 2,
+      "content": [
+        {
+          "markdown": "- [Create a VM](deploy-foundational-patterns.md)\r\n- [Create a VM with dependencies](deploy-foundational-patterns.md)\r\n- [Create a VM with a custom image](dev-start-vscode-storage.md)",
+          "metadata": {
+            "componentId": "how-to.oneof[unitLinkNextstep,unitLinkRelated].unitLinkRelated.componentId[0]",
+            "componentType": "compListUnordered",
+            "version": "0.0.1",
+            "schema": ""
+          },
+          "count": 3,
+          "content": [
+            {
+              "markdown": "- [Create a VM](deploy-foundational-patterns.md)",
+              "metadata": {
+                "componentId": "how-to.oneof[unitLinkNextstep,unitLinkRelated].unitLinkRelated.componentId[0].compListItem[0]",
+                "componentType": "compRowUnordered",
+                "version": "0.0.1",
+                "schema": ""
+              },
+              "order": 0,
+              "content": [
+                {
+                  "markdown": "[Create a VM](deploy-foundational-patterns.md)",
+                  "metadata": {
+                    "componentId": "0b27a5e5-3820-456e-bafa-1da53859f318",
+                    "componentType": "compParagraph"
+                  },
+                  "content": [
+                    {
+                      "markdown": "[Create a VM](deploy-foundational-patterns.md)",
+                      "metadata": {
+                        "componentId": "dc486359-c32f-49f8-84af-ea6b3045b87d",
+                        "componentType": "compLink"
+                      },
+                      "href": "deploy-foundational-patterns.md",
+                      "hrefPath": "ds1/deploy-foundational-patterns.md",
+                      "anchor": "",
+                      "link": "https://docs.microsoft.com/ds1/deploy-foundational-patterns",
+                      "queryString": "",
+                      "content": [
+                        {
+                          "markdown": "Create a VM",
+                          "metadata": {
+                            "componentId": "480eaee3-2c98-44ef-bd36-b18424c973e0",
+                            "componentType": "compParagraph"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "markdown": "- [Create a VM with dependencies](deploy-foundational-patterns.md)",
+              "metadata": {
+                "componentId": "1944599e-1ffd-42d7-b65b-49cc1fa155a6",
+                "componentType": "compRowUnordered"
+              },
+              "order": 1,
+              "content": [
+                {
+                  "markdown": "[Create a VM with dependencies](deploy-foundational-patterns.md)",
+                  "metadata": {
+                    "componentId": "fbb0173c-4be8-4ddd-9010-503c388272f8",
+                    "componentType": "compParagraph"
+                  },
+                  "content": [
+                    {
+                      "markdown": "[Create a VM with dependencies](deploy-foundational-patterns.md)",
+                      "metadata": {
+                        "componentId": "8edc420e-068f-4640-bcd7-c57d711593c7",
+                        "componentType": "compLink"
+                      },
+                      "href": "deploy-foundational-patterns.md",
+                      "hrefPath": "ds1/deploy-foundational-patterns.md",
+                      "anchor": "",
+                      "link": "https://docs.microsoft.com/ds1/deploy-foundational-patterns",
+                      "queryString": "",
+                      "content": [
+                        {
+                          "markdown": "Create a VM with dependencies",
+                          "metadata": {
+                            "componentId": "9313801c-a650-4b27-8261-b521f150ae71",
+                            "componentType": "compParagraph"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "markdown": "- [Create a VM with a custom image](dev-start-vscode-storage.md)",
+              "metadata": {
+                "componentId": "35cb1a6c-c048-48a4-873c-93939f0a6fa5",
+                "componentType": "compRowUnordered"
+              },
+              "order": 2,
+              "content": [
+                {
+                  "markdown": "[Create a VM with a custom image](dev-start-vscode-storage.md)",
+                  "metadata": {
+                    "componentId": "4059798d-5c32-4d87-9b3f-dac72f26060f",
+                    "componentType": "compParagraph"
+                  },
+                  "content": [
+                    {
+                      "markdown": "[Create a VM with a custom image](dev-start-vscode-storage.md)",
+                      "metadata": {
+                        "componentId": "7e8c33ac-3830-469d-ac36-3a5a4bd14a60",
+                        "componentType": "compLink"
+                      },
+                      "href": "dev-start-vscode-storage.md",
+                      "hrefPath": "ds1/dev-start-vscode-storage.md",
+                      "anchor": "",
+                      "link": "https://docs.microsoft.com/ds1/dev-start-vscode-storage",
+                      "queryString": "",
+                      "content": [
+                        {
+                          "markdown": "Create a VM with a custom image",
+                          "metadata": {
+                            "componentId": "8ef6411f-4e53-4be9-9259-65dd3fe5d88b",
+                            "componentType": "compParagraph"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
