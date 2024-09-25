@@ -1,0 +1,52 @@
+### YamlMime: AppliedSkills
+hidden: false
+labProfileId: '14914934235'
+metadata:
+  title: Build an Azure AI Vision solution
+  description: "Build an Azure AI Vision solution."
+  adobe-target: true
+title: Build an Azure AI Vision solution
+uid: applied-skill.zhl-test-build-azure-ai-vision-solution
+levels:  
+  - intermediate
+roles:
+  - developer
+  - ai-engineer
+  - maker
+products:
+  - azure-computer-vision
+subjects:
+  - artificial-intelligence
+locales:
+  - en
+  - ja
+  - zh-cn
+  - de
+  - fr
+  - es
+  - pt-br   
+summary: |-
+   To earn this Microsoft Applied Skills credential, learners demonstrate the ability to build computer vision solutions by using Azure AI Vision.
+   
+   Candidates for this credential should have a solid understanding of working with Azure AI Vision models, both prebuilt and custom, through Vision Studio and in code. They should also have experience programming in either Python or C#, be familiar with the Azure portal, and be comfortable provisioning Azure AI resources.
+tasks:
+  - Create a computer vision resource
+  - Analyze images
+  - Create a custom image analysis model
+  - Train and evaluate the model
+  - Consume a custom model
+studyGuide:  
+  - uid: learn.wwl.create-computer-vision-solutions-azure-ai
+resources:
+  - title: Study guide for Applied Skills
+    description: This study guide provides a summary of the topics covered in the assessment lab, along with additional resources to help you prepare.
+    href: https://aka.ms/APL3004-StudyGuide
+  - title: Support for Credentials
+    description: Get help through Microsoft Credentials support forums. A forum moderator will respond in one business day, Monday-Friday.
+    href: https://learn.microsoft.com/credentials/support/help
+  - title: Applied Skills poster
+    description: Explore all credentials in a concise guide.
+    href: https://aka.ms/AppliedSkillsPoster
+  - title: Choose your Microsoft Credential 
+    description: Microsoft Applied Skills or Microsoft Certifications? Choose the path that fits your career goals, desired skillset, and schedule.
+    href: https://aka.ms/ChooseYourMicrosoftCredential
