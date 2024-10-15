@@ -28,14 +28,15 @@ Summary
 
 ## Delete a VM with dependencies
 
-A dummy paragraph with list of steps
+A dummy code unit explains how to delete a VM with dependencies.
 
-1. item1
-2. item2
+```Javascript
+  function test() {
+    console.log("notice the blank line before this function?");
+  } 
+```
 
-## Related content
+## Next Step
 
-- [Create a VM](deploy-foundational-patterns.md)
-- [Create a VM with dependencies](deploy-foundational-patterns.md)
-- [Create a VM with a custom image](dev-start-vscode-storage.md)
-- [Create a VM with a custom image](dev-start-vscode-storage.md)
+> [!div class="nextstepaction"]
+> [Install WSL](install.md)
