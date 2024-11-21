@@ -1,5 +1,6 @@
 - name: Index
   href: index.md
+  displayName: display index name
 - name: Dog
   href: dog.md
 - name: Cat
