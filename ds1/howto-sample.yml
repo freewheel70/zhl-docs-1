@@ -16,14 +16,14 @@ metadata:
   #customer intent: As a <role>, I want <what> so that <why>.
 title: |
   Update the address space for a peered virtual network using the 
+introduction: |
+  In this article, you learn how to update a peered virtual network by modifying, adding, or deleting an address space using the Azure portal. These updates don't incur downtime interruptions. This feature is useful when you need to grow or resize the virtual networks in Azure after scaling your workloads.  
 prerequisites:
   summary: |
     There are two items:
   dependencies:
     - An existing peered virtual network with two virtual networks
     - If you add an address space, ensure that it doesn't overlap other address spaces 
-introduction: |
-  In this article, you learn how to update a peered virtual network by modifying, adding, or deleting an address space using the Azure portal. These updates don't incur downtime interruptions. This feature is useful when you need to grow or resize the virtual networks in Azure after scaling your workloads.
 procedureSection:
   - title: |
       Modify the address range prefix of an existing address 

@@ -36,7 +36,37 @@ A dummy code unit explains how to delete a VM with dependencies.
   } 
 ```
 
+
+## Delete a VM with dependencies
+
+A dummy code unit explains how to delete a VM with dependencies.
+
+```Javascript
+  function test() {
+    console.log("notice the blank line before this function?");
+  } 
+```
+
+
+## Delete a VM with dependencies
+
+A dummy code unit explains how to delete a VM with dependencies.
+
+```Javascript
+  function test() {
+    console.log("notice the blank line before this function?");
+  } 
+```
+
+
 ## Next Step
 
 > [!div class="nextstepaction"]
 > [Install WSL](install.md)
+
+
+## Next Step
+
+> [!div class="nextstepaction"]
+> [Install WSL](install.md)
+
