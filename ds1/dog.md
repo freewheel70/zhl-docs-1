@@ -9,7 +9,7 @@ no-loc: ["found"]
 # Dog
 ![cat1](cat1.png)
 
-![cat2](https://github.com/freewheel70/zhl-docs-2/tree/test/ted/ds1-2/cat2.png)
+![cat2](~/zhl-docs-2/tree/test/ted/ds1-2/cat2.png)
 
 ![cat3](https://github.com/freewheel70/zhl-docs-2/tree/test/ted/ds1-2/cat3.png)
 
