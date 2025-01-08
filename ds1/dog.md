@@ -9,7 +9,7 @@ no-loc: ["found"]
 # Dog
 ![cat1](cat1.png)
 
-![cat2](~/dep/cat2.png)
+![cat2](../ds2/cat2.png)
 
 ![cat3](~/dep/cat3.png)
 
