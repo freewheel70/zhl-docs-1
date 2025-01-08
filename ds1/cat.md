@@ -12,6 +12,8 @@ ms.search.region: Belgium, Norway, Sweden, Switzerland
 
 ![cat2](https://github.com/freewheel70/zhl-docs-2/tree/test/ted/ds1-2/cat2.png)
 
+![cat3](https://github.com/freewheel70/zhl-docs-2/tree/test/ted/ds1-2/cat3.png)
+
 The cat (Felis catus) is a domestic species of small carnivorous mammal.[1][2] It is the only domesticated species in the family Felidae and is often referred to as the domestic cat to distinguish it from the wild members of the family.  
 
 Visit [Micorsoft Store2](https://www.microsoft.com/en-sg/store/b/sale)
