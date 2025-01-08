@@ -63,9 +63,6 @@
     "updateCommitBuildTime": true,
     "documentIdOverride": "document-ids.json"
   },
-  "dependencies":{
-    "dep": "https://github.com/freewheel70/zhl-docs-1/tree/test/ted/ds2"
-  }
   "dependencies": [
     {
       "id": "zhl-docs-2",
