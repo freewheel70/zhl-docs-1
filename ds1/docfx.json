@@ -64,6 +64,6 @@
     "documentIdOverride": "document-ids.json"
   },
   "dependencies":{
-    "dep": "https://github.com/freewheel70/zhl-docs-2/tree/test/ted/ds1-2"
+    "dep": "https://github.com/freewheel70/zhl-docs-1/tree/test/ted/ds2"
   }
 }
