@@ -8,7 +8,6 @@ audience: Application User, Developer
 ms.search.region: Belgium, Norway, Sweden, Switzerland
 ---
 # Cat
-![cat1](cat1.png)
 
 The cat (Felis catus) is a domestic species of small carnivorous mammal.[1][2] It is the only domesticated species in the family Felidae and is often referred to as the domestic cat to distinguish it from the wild members of the family.  
 
