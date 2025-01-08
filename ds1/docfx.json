@@ -62,5 +62,8 @@
     "updateTimeAsCommitBuildTime": true,
     "updateCommitBuildTime": true,
     "documentIdOverride": "document-ids.json"
+  },
+  "dependencies":{
+    "dep": "https://github.com/freewheel70/zhl-docs-2"
   }
 }
