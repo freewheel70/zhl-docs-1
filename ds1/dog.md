@@ -7,11 +7,18 @@ ms.topic: how-to
 no-loc: ["found"]
 ---
 # Dog
+
+This cat is from current docset
 ![cat1](cat1.png)
 
+This cat is from ds2
 ![cat2](../ds2/cat2.png)
 
-![cat3](~/zhl-docs-2/ds1-2/cat2.png)
+This cat is from https://github.com/freewheel70/zhl-docs-2
+![cat3](~/zhl-docs-2/ds1-2/cat3.png)
+
+This cat is from https://github.com/freewheel70/zhl-docs-2 but not published
+![cat4](~/zhl-docs-2/ds1-2/cat4.png)
 
 The dog or domestic dog (Canis familiaris[4][5] or Canis lupus familiaris[5]) is a domesticated descendant of the wolf which is characterized by an upturning tail.  
 
