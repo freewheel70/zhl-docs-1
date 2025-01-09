@@ -11,7 +11,7 @@ no-loc: ["found"]
 
 ![cat2](../dep/cat2.png)
 
-![cat3](https://github.com/freewheel70/zhl-docs-2/blob/test/ted/ds1-2/cat2.png)
+![cat3](~/zhl-docs-2/blob/test/ted/ds1-2/cat2.png)
 
 The dog or domestic dog (Canis familiaris[4][5] or Canis lupus familiaris[5]) is a domesticated descendant of the wolf which is characterized by an upturning tail.  
 
