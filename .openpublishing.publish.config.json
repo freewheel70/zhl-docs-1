@@ -51,7 +51,8 @@
       "path_to_root": "azure-sql/reusable-content",
       "url": "https://github.com/MicrosoftDocs/reusable-content",
       "branch": "main",
-      "branch_mapping": {}
+      "branch_mapping": {},
+      "includeInBuild": "true"
     }
   ],
     "docs_build_engine": {
