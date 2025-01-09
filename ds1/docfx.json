@@ -61,12 +61,10 @@
     "dest": "ds1",
     "updateTimeAsCommitBuildTime": true,
     "updateCommitBuildTime": true,
-    "documentIdOverride": "document-ids.json"
-  },
-  "dependencies": [
+    "documentIdOverride": "document-ids.json",
+    "dependencies": 
     {
-      "id": "zhl-docs-2",
-      "repository": "https://github.com/freewheel70/zhl-docs-2"
+      "zhl-docs-2": "https://github.com/freewheel70/zhl-docs-2"
     }
-  ]
+  }
 }
