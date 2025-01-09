@@ -64,7 +64,10 @@
     "documentIdOverride": "document-ids.json",
     "dependencies": 
     {
-      "zhl-docs-2": "https://github.com/freewheel70/zhl-docs-2"
+      "zhl-docs-2": {
+        "Path":"https://github.com/freewheel70/zhl-docs-2",
+        "Branch":"test/ted"
+      }
     }
   }
 }
