@@ -7,4 +7,4 @@ ms.topic: how-to
 no-loc: ["found"]
 ---
 
-[!INCLUDE [include](~/../azure-sql/reusable-content/github-actions/create-secrets-with-openid.md)]
+[!INCLUDE [include](~/azure-sql/reusable-content/github-actions/create-secrets-with-openid.md)]
