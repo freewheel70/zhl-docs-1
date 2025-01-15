@@ -11,8 +11,9 @@ ms.reviewer: thoroet
 ---
 # How to delete a virtual machine with dependencies on Azure Stack Hub
 
-paragraph one 
 
-paragraph two
+The following is a code block
 
-paragraph three.
+```powershell
+Get-AzResourceGroup -Name "myResourceGroup"
+```

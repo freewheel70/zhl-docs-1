@@ -3,8 +3,11 @@
   displayName: display index name
 - name: Dog
   href: dog.md
-- name: ":::no-loc text=\"AutoTransactionBehavior\":::"
+- name: AutoTransactionBehavior
   href: cat.md
+  no-loc:
+    - AutoTransactionBehavior
+    - Cat
 - name: How-to tutorials
   href: howto/toc.yml
   topicHref: howto/overview.md
