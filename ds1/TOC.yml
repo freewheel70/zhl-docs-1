@@ -8,6 +8,7 @@
   no-loc:
     - AutoTransactionBehavior
     - Cat
+    - Dog
 - name: How-to tutorials
   href: howto/toc.yml
   topicHref: howto/overview.md
