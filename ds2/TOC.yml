@@ -2,7 +2,9 @@
   href: index.md
 - name: Duck
   href: duck.md  
-- name: Chicken
+- name: Chicken1
+  href: chicken.yml
+- name: Chicken2
   href: chicken.yml
 - name: Goose
   href: goose.yml  

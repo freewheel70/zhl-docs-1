@@ -1,9 +1,14 @@
 - name: Index
   href: index.md
+  displayName: display index name
 - name: Dog
   href: dog.md
-- name: Cat
+- name: AutoTransactionBehavior
   href: cat.md
+  no-loc:
+    - AutoTransactionBehavior
+    - Cat
+    - Dog
 - name: How-to tutorials
   href: howto/toc.yml
   topicHref: howto/overview.md
@@ -13,3 +18,4 @@
   href: missing2.md  
 - name: CSharp
   href: Csharp.md
+- null
