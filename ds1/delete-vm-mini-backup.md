@@ -6,7 +6,7 @@ author: sethmanheim
 ms.topic: how-to
 ms.custom:
   - devx-track-azurepowershell
-ms.date: 02/13/2023
+ms.date: 12/11/2024
 ms.author: sethm
 ms.reviewer: thoroet
 ms.lastreviewed: 5/20/2021
@@ -21,7 +21,6 @@ paragraph one
 
 paragraph two
 
-paragraph three.
 
 ## Prerequisites
 
@@ -38,5 +37,6 @@ Content of Delete a VM with dependencies
 
 content of Related content
 
+- [Create a VM](deploy-foundational-patterns.md)
 - [Create a VM](deploy-foundational-patterns.md)
 

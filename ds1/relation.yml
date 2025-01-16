@@ -1,0 +1,43 @@
+### YamlMime:NormalSelectQuestion
+responseAlternatives:
+- id: "0"
+  text: We need more information on this topic
+  description: ""
+  imageUrl: ""
+  isCorrect: false
+  score:
+    value: 0
+- id: "1"
+  text: 'We know about the feature, but we are not using it in our operations '
+  description: ""
+  imageUrl: ""
+  isCorrect: false
+  score:
+    value: 1
+- id: "2"
+  text: We are aware of this, and the team is trained and using it in operations
+  description: ""
+  imageUrl: ""
+  isCorrect: false
+  score:
+    value: 3
+video:
+  title: ""
+  url: ""
+  context: ""
+  priority: 0
+  reportingCategory: ""
+  reportingSubCategory: ""
+type: AssessmentQuestion
+kind: SingleSelect
+condition:
+  allOf: []
+  anyOf: []
+  noneOf: []
+  scoreOf: []
+stem: >+
+  The article provides information on how to create a Task Guide, how to use BPM to create a UAT, and how to run a UAT in the system.
+
+isRequired: true
+uid: 003b8d26-a9fe-4d81-b46f-363f5f03bfe6
+name: Is your team aware of and knowledgeable about how to use Automated User Acceptance tests?

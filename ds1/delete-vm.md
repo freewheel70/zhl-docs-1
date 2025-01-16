@@ -18,6 +18,8 @@ second paragraph.
 
 Another paragraph.
 
+Another paragraph.
+
 ## Prerequisites
 
 Summary
@@ -32,6 +34,14 @@ When you create a new VM, you typically create a new resource group and put all 
 
 1. item1
 2. item2
+
+## Delete a VM with dependencies
+
+When you create a new VM, you typically create a new resource group and put all the dependencies in that resource group. When you want to delete the VM and all of its dependencies, you can delete the resource group. Azure Resource Manager successfully deletes the dependencies. There are times when you cannot delete the resource group to remove the VM; for example, the VM might contain resources that are not dependencies of the VM that you want to keep.
+
+```C++
+abc
+```
 
 ## Related content
 
