@@ -4,7 +4,6 @@ author: zhihongli
 description: introduction about dog
 uid: zhl-docs-1-dog
 ms.topic: how-to
-no-loc: ["found"]
 ---
 # Dog
 
