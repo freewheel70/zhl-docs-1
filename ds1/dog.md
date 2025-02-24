@@ -26,3 +26,9 @@ work hard
 abc SYNC def
 
 xyz sync ijk
+
+
+testing paraghaph 2^10 and H~2~O how are you
+
+
+testing paraghaph 2^10^ and H~2~O how are you
