@@ -32,3 +32,21 @@ testing paraghaph 2^10 and H~2~O how are you
 
 
 testing paraghaph 2^10^ and H~2~O how are you
+
+mermaid diagram
+
+```mermaid 
+ graph TD; 
+   A-->B; 
+   B-->C; 
+ ``` 
+
+Here is a checklist
+> [!div class="checklist"] 
+ > * List item 1 
+ > * List item 2 
+ > * List item 3 
+
+# next step
+ > [!div class="nextstepaction"] 
+ > [button text](./mk-howto.md) 
