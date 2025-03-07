@@ -17,9 +17,9 @@ It is not easy to use contractions, but you are encouraged to try. That is how y
 
 You can't delete this file, but you cannot rename it.
 
-Microsoft’s developing a new feature that’ll improve performance.
+Microsoft's developing a new feature that'll improve performance.
 
-There’d been an error, and it’ll be fixed soon.
+There'd been an error, and it'll be fixed soon.
 
 The settings can be adjusted by the user in the preferences menu.
 
