@@ -17,7 +17,7 @@ metadata:
 title: Collect and manipulate user inputs by using Azure Active Directory B2C custom policy
 
 introduction: |
-  Azure Active Directory B2C (Azure AD B2C) custom policies allows you to collect user inputs. You can then use inbuilt methods to manipulate the user inputs.  
+  Azure Active Directory B2C (Azure AD B2C) custom policies allows you to collect user inputs. You can then use inbuilt methods to manipulate the user inputs. test 
 
   In this article, you learn how to write a custom policy that collects user inputs via a graphical user interface. You'll then access the inputs, process then, and finally return them as claims in a JWT token. To complete this task, you'll: 
 
