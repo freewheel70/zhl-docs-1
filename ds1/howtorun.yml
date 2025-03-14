@@ -14,7 +14,7 @@ metadata:
     ms.date: 11/06/2023
     ms.subservice: B2C
 
-title: Collect and manipulate user inputs by using Azure Active Directory B2C custom policy
+title: Collect and manipulate user inputs by using Azure Active Directory B2C custom policy test
 
 introduction: |
   Azure Active Directory B2C (Azure AD B2C) custom policies allows you to collect user inputs. You can then use inbuilt methods to manipulate the user inputs.  
