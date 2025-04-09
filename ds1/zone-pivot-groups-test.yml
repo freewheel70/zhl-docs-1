@@ -1,0 +1,10 @@
+# YamlMime:ZonePivotGroups
+    groups:
+    - id: test-group
+      title: This is the title for your zone pivot group
+      prompt: This text is rendered for the user above their selection
+      pivots:
+      - id: test-pivot-1
+        title: First tab
+      - id: test-pivot-2
+        title: Second tab
