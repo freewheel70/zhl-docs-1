@@ -4,7 +4,7 @@ author: zhihongli
 description: introduction about dog
 uid: zhl-docs-1-dog
 ms.topic: how-to
-zone_pivot_group_filename: zone-pivot-groups.json
+zone_pivot_group_filename: ds1/zone-pivot-groups.json
 zone_pivot_groups: test-group
 ---
 # Dog
