@@ -1,0 +1,4 @@
+- name: Toc Reference
+          href: b.md
+        - name: Non-existed Toc reference
+          href: c.md
