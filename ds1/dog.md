@@ -9,6 +9,7 @@ zone_pivot_groups: test-group
 ---
 # Dog
 ::: zone pivot="test-pivot-1"
+## H2
 ::: zone-end
 
 The dog or domestic dog (Canis familiaris[4][5] or Canis lupus familiaris[5]) is a domesticated descendant of the wolf which is characterized by an upturning tail.  
