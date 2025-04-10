@@ -5,6 +5,7 @@ description: introduction about dog
 uid: zhl-docs-1-dog
 ms.topic: how-to
 zone_pivot_groups_path: /ds1/zone-pivot-groups.json
+zone_pivot_groups: test-group
 ---
 # Dog
 ::: zone pivot="test-pivot-1"
