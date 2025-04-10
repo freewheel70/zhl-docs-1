@@ -8,3 +8,7 @@ groups:
     title: First tab
   - id: test-pivot-2
     title: Second tab
+  - id: test-pivot-2
+    title: Duplicated tab, will be ignored
+- id: test-group
+  title: Duplicated group, will be ignored
