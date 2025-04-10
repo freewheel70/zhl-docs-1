@@ -4,7 +4,7 @@ author: ted
 description: introduction about zone pivot
 uid: zhl-docs-1-pivot
 ms.topic: test
-zone_pivot_groups_path: zone-pivot-groups.json
+zone_pivot_groups_path: /ds1/zone-pivot-groups.json
 zone_pivot_groups: test-group
 ---
 # TEST
