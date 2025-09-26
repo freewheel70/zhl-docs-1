@@ -1,0 +1,6 @@
+### YamlMime:ModuleUnit
+title: Unit C
+uid: unit-c
+durationInMinutes: 60
+content: |
+  [!include[](content.md)]

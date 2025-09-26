@@ -1,0 +1,19 @@
+### YamlMime:Module
+uid: module
+title: Learn Module
+summary: In this module, you will learn 2 units.
+iconUrl: /learn/achievements/dotnet-files.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- dotnet
+- azure
+- azure-migrate
+abstract: |
+  In this module, you will learn:
+  - unit c
+units:
+  - unit-c
+achievement: badge

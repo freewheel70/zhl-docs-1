@@ -1,0 +1,14 @@
+### YamlMime:LearningPath
+uid: path
+modules: ["module"]
+title: Path Title
+summary: Path Summary
+iconUrl: /learn/achievements/generic-trophy.svg
+achievement: trophy
+levels:
+- intermediate
+roles:
+- administrator
+- solution-architect
+products:
+- azure
