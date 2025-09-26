@@ -4,7 +4,7 @@ modules: ["module"]
 title: Path Title
 summary: Path Summary
 iconUrl: /learn/achievements/generic-trophy.svg
-achievement: trophy
+achievement: zhl-docs-1.trophy
 levels:
 - intermediate
 roles:

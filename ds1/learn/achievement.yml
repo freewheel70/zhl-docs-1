@@ -1,0 +1,12 @@
+### YamlMime:Achievements
+achievements:
+  - uid: zhl-docs-1.badge
+    type: badge
+    title: Badge Title updated
+    summary: Badge Summary updated
+    iconUrl: /learn/achievements/make-your-virtual-machines-highly-available.svg
+  - uid: zhl-docs-1.trophy
+    type: trophy
+    title: Trophy Title updated
+    summary: Trophy Summary updated
+    iconUrl: /learn/achievements/azure-sfa-generalist-path.svg
