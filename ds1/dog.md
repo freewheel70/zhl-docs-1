@@ -29,7 +29,7 @@ hello 2024
 
 Some <b>important</b> <i>note</i>
 
-work hard
+## work hard
 
 abc SYNC def
 
@@ -68,3 +68,38 @@ testing
 
 testing
 > [!div class="op_multi_selector" title1="Platform" title2="Backend"] > - [(iOS | .NET)](./mk-howto.md) 
+
+
+## :::no-loc text="/add-driver":::
+
+Add driver package
+
+```console
+pnputil /add-driver x:\driver.inf
+```
+
+Add multiple driver packages
+
+```console
+pnputil /add-driver c:\oem\*.inf
+```
+
+Add and install driver package on an existing device
+
+```console
+pnputil /add-driver device.inf /install
+```
+
+## :::no-loc text="/delete-driver":::
+
+Delete driver package
+
+```console
+pnputil /delete-driver oem0.inf
+```
+
+Force delete driver package
+
+```console
+pnputil /delete-driver oem1.inf /force
+```

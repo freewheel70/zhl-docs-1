@@ -36,3 +36,38 @@ udpate on 2024-06-04
 
 
 testing paraghaph 2^10 and H~2~O how are you
+
+
+## /add-driver
+
+Add driver package
+
+```console
+pnputil /add-driver x:\driver.inf
+```
+
+Add multiple driver packages
+
+```console
+pnputil /add-driver c:\oem\*.inf
+```
+
+Add and install driver package on an existing device
+
+```console
+pnputil /add-driver device.inf /install
+```
+
+## /delete-driver
+
+Delete driver package
+
+```console
+pnputil /delete-driver oem0.inf
+```
+
+Force delete driver package
+
+```console
+pnputil /delete-driver oem1.inf /force
+```
