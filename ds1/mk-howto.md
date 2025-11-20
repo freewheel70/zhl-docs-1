@@ -23,7 +23,9 @@ Something
 - sdflsdjfl
 
 
-The equation is $$\ket{\phi}=\frac1{\sqrt2}(\ket{0_A 0_B}+ \ket{1_A 1_B})$$
+Imagine two qubits $A$ and $B$ such that the state of the two-qubit system $\ket{\phi}$ is:
+
+$$\ket{\phi}=\frac1{\sqrt2}(\ket{0_A 0_B}+ \ket{1_A 1_B})$$
 
 
 ## Procedure
