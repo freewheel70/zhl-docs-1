@@ -23,7 +23,7 @@ Something
 - sdflsdjfl
 
 
-The equation is $a^2 + b^2 = c^2$.
+The equation is $$\ket{\phi}=\frac1{\sqrt2}(\ket{0_A 0_B}+ \ket{1_A 1_B})$$
 
 
 ## Procedure
