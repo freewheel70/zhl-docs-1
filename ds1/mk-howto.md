@@ -23,6 +23,9 @@ Something
 - sdflsdjfl
 
 
+The equation is $a^2 + b^2 = c^2$.
+
+
 ## Procedure
 
 some words
