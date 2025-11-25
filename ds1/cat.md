@@ -71,3 +71,11 @@ Force delete driver package
 ```console
 pnputil /delete-driver oem1.inf /force
 ```
+
+## \<i>
+slash i tag
+
+
+## <i>
+single i tag
+
