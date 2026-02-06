@@ -21,7 +21,7 @@ There are also lots of dogs in <xref:zhl-docs-2-shanghai>
 
 Should not be found in <xref:zhl-docs-2-shanghai-dummy> 
 
-[link to docs homepage](https://ppe.docs.microsoft.com/en-us/test-page/index)
+[link to docs homepage](http://ppe.docs.microsoft.com/en-us/test-page/index)
 :::image type="content" source="data:image/png;base64,iVBORw0KGxxx" alt-text="Screenshot that shows the deployment as Active.":::
 A dummy update on 5th August.
 
@@ -103,6 +103,8 @@ Force delete driver package
 ```console
 pnputil /delete-driver oem1.inf /force
 ```
+
+Learn AI from [ai-foundry](http://learn.microsoft.com/en-us/azure/ai-foundry/agents/overview?view=foundry)
 
 
 ## \<i>
