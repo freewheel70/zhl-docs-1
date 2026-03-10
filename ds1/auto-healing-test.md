@@ -2,6 +2,10 @@
 title: Markdown Howto
 author: zhihongli 
 description: introduction about Howto
+ms.technology: some-tech
+ms.prod: some-product
+product:
+- Windows
 ---
 # Dog
 
@@ -35,4 +39,5 @@ This is an [external link](https://docs.microsoft.com/en-us/documentation/articl
 
 Found an [external link](http://learn.microsoft.com/nolocale)
 
+another learn site link |[aksarc](https://learn.microsoft.com/en-us/azure/aks/hybrid/)
 
