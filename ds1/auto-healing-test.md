@@ -2,10 +2,6 @@
 title: Markdown Howto
 author: zhihongli 
 description: introduction about Howto
-ms.technology: some-tech
-ms.prod: some-product
-product:
-- Windows
 ---
 # Dog
 
@@ -35,9 +31,9 @@ $$\ket{\phi}=\frac1{\sqrt2}(\ket{0_A 0_B}+ \ket{1_A 1_B})$$
 
 some words
 
-This is an [external link](https://docs.microsoft.com/en-us/documentation/articles/azure-web-sites-web-hosting-plans-in-depth-overview) And at the same line here is another <a href="https://docs.microsoft.com/en-us/documentation/articles/azure-web-sites-web-hosting-plans-in-depth-overview">inline html link</a>
+This is an [external link](/documentation/articles/azure-web-sites-web-hosting-plans-in-depth-overview) And at the same line here is another <a href="/documentation/articles/azure-web-sites-web-hosting-plans-in-depth-overview">inline html link</a>
 
-Found an [external link](http://learn.microsoft.com/nolocale)
+Found an [external link](/nolocale)
 
-another learn site link |[aksarc](https://learn.microsoft.com/en-us/azure/aks/hybrid/)
+another learn site link |[aksarc](/azure/aks/hybrid/)
 
