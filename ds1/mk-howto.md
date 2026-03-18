@@ -36,6 +36,6 @@ This is an [external link](https://azure.microsoft.com/en-us/documentation/artic
 
 And here is another <a href="https://azure.microsoft.com/en-us/documentation/articles/azure-web-sites-web-hosting-plans-in-depth-overview">inline html link</a>
 
-Found an [external link](http://learn.microsoft.com/nolocale)
+Found an [external link](/nolocale)
 
 
