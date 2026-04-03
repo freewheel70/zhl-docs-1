@@ -71,3 +71,10 @@ A table without table header and separator
 | `File` | Absolute path to the file being fixed |
 | `Line` / `Column` | 1-based start position of `OriginalContent` |
 | `EndLine` / `EndColumn` | 1-based end position (inclusive) of `OriginalContent` |
+
+
+> [!NOTE]
+> Information the user should notice even if skimming.
+> Information the user should notice even if swimming.
+> Information the user should notice even if running.
+> bye
