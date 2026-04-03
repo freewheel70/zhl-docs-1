@@ -42,3 +42,12 @@ A table with separator but without table header
 | `File` | Absolute path to the file being fixed |
 | `Line` / `Column` | 1-based start position of `OriginalContent` |
 | `EndLine` / `EndColumn` | 1-based end position (inclusive) of `OriginalContent` |
+
+
+
+A table with data row has more cells than the header row
+
+| Name | Description |
+|----|-----|
+| `OriginalContent` | The exact text to be replaced | |
+| `SuggestedContent` | The replacement text (empty string means deletion) | |
