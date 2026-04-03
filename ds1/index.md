@@ -59,3 +59,15 @@ A table with data row has more cells than the header row 2
 |----|-----|-----|
 | `OriginalContent` | The exact text to be replaced | |
 | `SuggestedContent` | The replacement text (empty string means deletion) | |
+
+
+A table without table header and separator
+
+|----|-----|
+| `OriginalContent` | The exact text to be replaced |
+| `SuggestedContent` | The replacement text (empty string means deletion) |
+| `FixCode` | The validation error code that triggered the fix |
+| `FixMessage` | Human-readable description of what the fix does |
+| `File` | Absolute path to the file being fixed |
+| `Line` / `Column` | 1-based start position of `OriginalContent` |
+| `EndLine` / `EndColumn` | 1-based end position (inclusive) of `OriginalContent` |
