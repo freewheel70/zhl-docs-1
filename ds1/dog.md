@@ -113,3 +113,14 @@ slash i tag
 
 ## <i>
 single i tag
+
+A table without separator
+
+| Property | Description |
+| `OriginalContent` | The exact text to be replaced |
+| `SuggestedContent` | The replacement text (empty string means deletion) |
+| `FixCode` | The validation error code that triggered the fix |
+| `FixMessage` | Human-readable description of what the fix does |
+| `File` | Absolute path to the file being fixed |
+| `Line` / `Column` | 1-based start position of `OriginalContent` |
+| `EndLine` / `EndColumn` | 1-based end position (inclusive) of `OriginalContent` |
