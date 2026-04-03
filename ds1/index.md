@@ -51,3 +51,11 @@ A table with data row has more cells than the header row
 |----|-----|
 | `OriginalContent` | The exact text to be replaced | |
 | `SuggestedContent` | The replacement text (empty string means deletion) | |
+
+
+A table with data row has more cells than the header row 2
+
+| Name | Description |
+|----|-----|-----|
+| `OriginalContent` | The exact text to be replaced | |
+| `SuggestedContent` | The replacement text (empty string means deletion) | |
