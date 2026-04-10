@@ -121,3 +121,19 @@ A table without table header and separator
 | **Row 2 A** | Row 2 B | Row 2 C |
 | **Row 3 A** | Row 3 B | Row 3 C |
 | **Row 4 A** | Row 4 B | Row 4 C |
+
+
+| Column A | Column B |  |
+| --- | --- | --- |
+| **Row 1 A** | Row 1 B | Row 1 C |
+| **Row 2 A** | Row 2 B | Row 2 C |
+| **Row 3 A** | Row 3 B | Row 3 C |
+| **Row 4 A** | Row 4 B | Row 4 C |
+
+
+| **Column A** | **Column B** |  |
+| --- | --- | --- |
+| **Row 1 A** | Row 1 B | Row 1 C |
+| **Row 2 A** | Row 2 B | Row 2 C |
+| **Row 3 A** | Row 3 B | Row 3 C |
+| **Row 4 A** | Row 4 B | Row 4 C |
