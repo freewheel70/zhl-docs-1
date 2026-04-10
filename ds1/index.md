@@ -80,7 +80,7 @@ A table without table header and separator
 > bye
 
 
-|| Description |
+|| **Description** |
 |----|-----|
 | `OriginalContent` | The exact text to be replaced |
 | `SuggestedContent` | The replacement text (empty string means deletion) |
@@ -91,7 +91,7 @@ A table without table header and separator
 | `EndLine` / `EndColumn` | 1-based end position (inclusive) of `OriginalContent` |
 
 
-| | Column B | Column C |
+| | **Column B** | **Column C** |
 | --- | --- | --- |
 | Row 1 A | Row 1 B | Row 1 C |
 | Row 2 A | Row 2 B | Row 2 C |
